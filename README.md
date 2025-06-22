@@ -58,13 +58,26 @@ npm run test
 ```
 src/
 ├── modules/
+│   ├── cron/
+│   │   ├── tasks/
+│   │   │   ├── task-a.js
+│   │   │   └── task-b.js
+│   │   ├── cron.registry.js      # Регистрация cron-задач
+│   │   ├── cron.service.js       # Запуск и управление задачами
+│   │   └── cron.setup.js         # Настройка cron-модуля
 │   ├── database/
 │   │   ├── migrations/           # Umzug миграции
-│   │   │   └── 20240322-create-user.js
-│   │   ├── repositories/         # Работа с моделями
+│   │   │   ├── 20240322-create-user.js
+│   │   │   └── 20240323-create-task-log.js
+│   │   ├── repositories/
 │   │   │   └── user.repository.js
 │   │   ├── database.js           # Инициализация Sequelize
 │   │   └── migrate.js            # Запуск миграций
+│   ├── task/
+│   │   ├── controllers/
+│   │   │   └── task.controller.js
+│   │   └── services/
+│   │       └── task.service.js
 │   └── user/
 │       ├── controllers/
 │       │   └── user-wallet.controller.js
@@ -73,6 +86,9 @@ src/
 ├── test/
 │   └── balance.test.js           # Нагрузочное тестирование
 ├── app.js                        # Инициализация приложения
+├── cluster.js                    # Кластеризация сервера
+
+
 
 ```
 
