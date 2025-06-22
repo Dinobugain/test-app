@@ -1,0 +1,25 @@
+{
+  "name": "newapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "migrate": "node src/modules/database/migrate.js",
+    "test": "node src/test/balance.test.js",
+    "cluster": "node src/cluster.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cluster": "^0.7.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "p-limit": "^6.2.0",
+    "pg": "^8.14.1",
+    "sequelize": "^6.37.6",
+    "umzug": "^3.8.2"
+  }
+}

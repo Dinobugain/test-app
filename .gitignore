@@ -1,0 +1,17 @@
+.idea
+dist
+*.env*
+app.log
+app.log.*
+node_modules
+/src/documents/
+/documents/
+/support/
+swagger.json
+callbacks.log
+src/uploads/*
+csr_files
+exports
+csr_*
+pem_*
+.vscode
