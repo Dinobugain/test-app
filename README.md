@@ -1,4 +1,4 @@
-# test-balance-app
+# test-app
 
 ```markdown
 # 💸 Wallet App (Node.js + Express + Sequelize)
